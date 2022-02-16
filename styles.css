@@ -15,7 +15,9 @@
 	grid-gap: 0px;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(5, auto);
-	grid-template-areas: 'header header header';
+	grid-template-areas: 
+    'header header'
+    'banner banner';
 }
 
 /* Inicio de Configuración CSS correspondiente al Header*/
@@ -43,7 +45,7 @@
 }
 
 .content .header .navegacion {
-	margin-right: 20px;
+	margin-right: 60px;
 }
 
 .content .header i {
@@ -51,4 +53,17 @@
 	margin-left: 60px;
 }
 
-/*Fin de Configuracion del Header*/
+/*Fin de Configuración del Header*/
+
+/*Inicio de la Configuración del Banner*/
+
+.content .banner {
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    height: 540px;
+    grid-area: banner;
+    background-image: url(img/zarzuela.JPG);
+}
+
+/*Fin de la configuración del Banner*/
