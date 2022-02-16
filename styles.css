@@ -1,0 +1,5 @@
+/*Reinicio de Valores Establecidos por el Navegador*/
+* {
+    margin: 0;
+    padding: 0;
+}
