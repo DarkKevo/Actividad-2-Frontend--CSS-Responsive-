@@ -18,7 +18,8 @@
 	grid-template-areas: 
     'header header'
     'banner banner'
-    'articulo articulo';
+    'articulo articulo'
+    'main main';
 }
 
 /* Inicio de Configuración CSS correspondiente al Header*/
@@ -62,13 +63,13 @@
     background-image: url(img/zarzuela.JPG);
     background-size: cover;
     background-position: center;
-    height: 540px;
+    height: 40rem;
     grid-area: banner;
 }
 
 /*Fin de la configuración del Banner*/
 
-/*Inicio de la Configuracion Articulo*/
+/*Inicio de la Configuración Articulo*/
 
 .content .articulo {
     grid-area: articulo;
@@ -156,4 +157,141 @@
 .content .articulo .special-item i {
     font-size: 80px;
     margin-bottom: 15px;
+}
+
+/*Fin de la configuración de articulo*/
+
+/*Inicio de Configuración del Main*/
+
+.content .main {
+    grid-area: main;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+.content .main .p1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: auto 4rem;
+}
+.content .main .p1 .texto {
+    width: 45%;
+}
+
+.content .main .p1 .img {
+    width: 35%;
+}
+
+.content .main .p1 .texto {
+    font-size: 18px;
+}
+
+.content .main .p1 .texto .separador {
+    width: 70px;
+    height: 4px;
+    background-color: red;
+    border-radius: 2px;
+    margin-bottom: 30px;
+}
+
+.content .main .p1 h2 {
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.content .main .p2 {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 8rem 1rem;
+} 
+
+.content .main .p2 .img {
+    width: 40%;
+    margin-left: 8rem;
+}
+
+.content .main .p2 .img img {
+    width: 85%;
+}
+
+.content .main .p2 .form {
+    width: 40%;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 8rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.content .main .p2 .form input, textarea {
+    display: flex;
+    flex-direction: column;
+}
+
+.content .main .p2 .form input {
+    padding: 8px;
+    width: 95%;
+    background-color: rgb(59, 57, 57);
+    border: none;
+    margin: 10px 0px;
+}
+
+.content .main .form textarea {
+    width: 97.5%;
+    padding: 40px 0px;
+    background-color: rgb(59, 57, 57);
+    border: none;
+    margin-top: 10px;
+} 
+
+.content .main .p2 h2 {
+    margin-bottom: 1rem;
+}
+
+.content .main .p2 .form .separador {
+    width: 70px;
+    height: 4px;
+    background-color: red;
+    border-radius: 2px;
+    margin-bottom: 1rem;
+}
+
+.content .main .p2 .form .boton {
+    margin-top: 1.5rem;
+    padding: 15px 30px;
+    border-radius: 35px;
+    background-color: black;
+    color: white;
+    border: 2px solid rgb(235, 29, 29);
+    transition: 0.5s;
+}
+
+.content .main .p2 .form .boton:hover {
+    color: red;
+}
+
+.content .main .p2 .redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.content .main .p2 .redes a {
+    text-decoration: none;
+    margin: auto 1rem;
+    color: white;
+    transition: 0.3s;
+}
+
+.content .main .p2 .redes a:hover {
+    font-size: 25px;
 }
