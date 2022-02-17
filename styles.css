@@ -242,6 +242,7 @@
     background-color: rgb(59, 57, 57);
     border: none;
     margin: 10px 0px;
+    color: white;
 }
 
 .content .main .form textarea {
@@ -250,6 +251,7 @@
     background-color: rgb(59, 57, 57);
     border: none;
     margin-top: 10px;
+    color: white;
 } 
 
 .content .main .p2 h2 {
