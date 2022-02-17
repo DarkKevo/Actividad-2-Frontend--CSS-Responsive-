@@ -247,7 +247,7 @@
 
 .content .main .form textarea {
     width: 97.5%;
-    padding: 40px 0px;
+    height: 8rem;
     background-color: rgb(59, 57, 57);
     border: none;
     margin-top: 10px;
