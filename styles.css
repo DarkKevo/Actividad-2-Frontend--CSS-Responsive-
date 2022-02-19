@@ -6,6 +6,8 @@
 		Verdana, sans-serif;
 }
 
+/*Definicion del Contenedor Grid de la Pagina*/
+
 .content {
 	background-color: aqua;
 	display: grid;
