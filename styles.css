@@ -12,6 +12,7 @@
 	background-color: aqua;
 	display: grid;
 	width: 100%;
+    min-width: 360px;
 	max-width: 100%;
 	margin: 0px auto;
 	grid-gap: 0px;
@@ -103,11 +104,11 @@
 
 .content .articulo .links {
     display: flex;
+    flex-wrap: wrap;
     width: 100%;
     background-color: black;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 .content .articulo .item,
@@ -503,7 +504,7 @@ Aproximadamente entre
 
 @media screen and (max-width: 870px) {
     .content .banner {
-        height: 25rem;
+        height: 22rem;
     }
     .content .main .p1 .texto {
         font-size: 15px;
@@ -531,6 +532,9 @@ Aproximadamente entre
         font-size: 10px;
         margin-bottom: 5px;
     }
+    .content .main .contacto a {
+        font-size: 10px;
+    }
     .content .main .p1 .texto .separador {
         margin-bottom: 20px;
     }
@@ -552,7 +556,6 @@ Aproximadamente entre
     }
     .content .articulo .special-item i {
         font-size: 30px;
-        margin-bottom: 15px;
     }
     .content .articulo .item a {
         height: 35px;
@@ -610,4 +613,179 @@ Aproximadamente entre
 
 /*Resolución de Teléfonos 
 Aproximadamente entre
-550px - 430px - 360px */
+640px - 550px - 430px - 360px */
+
+@media screen and (max-width: 640px) {
+    .content .banner {
+        height: 16rem;
+    }
+    .content .articulo .links {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .content .articulo .item,
+    .content .articulo .special-item {
+        align-self: center;
+    }
+    .content .main .p2 .form {
+        width: 90%;
+    }
+    .content .main .p2 .form h2 {
+        text-align: center;
+        font-size: 20px;
+    }
+    .content .main .p2 .form form label {
+        align-self: start;
+        font-size: 10px;
+    }
+    .content .main .p2 .img {
+        width: 70%;
+    }
+    .content .header {
+        flex-direction: column;
+    }
+    .content .header .navegacion {
+        margin-right: 0px;
+        margin-top: 1rem;
+    }
+    
+    .content .header i {
+        margin-left: 0px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .content .banner {
+        height: 15rem;
+    }
+    .content .articulo h2 {
+        font-size: 22px;
+    }
+    .content .main .p1 .texto h2 {
+        font-size: 22px;
+    }
+    .content .main .p1 .texto p {
+        font-size: 12px;
+    }
+    .content .main .p1 .img {
+        width: 45%;
+    }
+    .content .main .p2 .img {
+        width: 55%;
+    }
+    .content .main .p2 .form {
+        width: 70%;
+    }
+    .content .main .p2 .form h2 {
+        font-size: 18px;
+    }
+    .content .main .p2 .form form label {
+        align-self: start;
+        font-size: 8px;
+    }
+    .content .main .contacto h3 {
+        font-size: 18px;
+    }
+    .content .sponsors .sponsor1 h3 {
+        font-size: 18px;
+    }
+    .content .footer .footer-content i {
+        font-size: 2rem;
+    }
+    .content .footer .footer-content {
+        margin-top: 2rem;
+        margin-bottom: 0.5rem;
+    }
+    .content .footer .footer2 p {
+        font-size: 8px;
+    }
+    .content .footer .footer2 .footer-extra p {
+        font-size: 8px;
+    }
+    .content .footer .footer2 .footer-extra i {
+        font-size: 22px;
+    }
+    .content .header a {
+        font-size: 6px;
+    }
+    .content .main .p2 .form {
+        width: 85%;
+        margin-top: 4rem;
+    }
+}
+
+@media screen and (max-width: 430px) {
+    .content .banner {
+        height: 12rem;
+    }
+    .content .articulo h2 {
+        font-size: 16px;
+    }
+    .content .main .p1 .texto h2 {
+        font-size: 16px;
+    }
+    .content .main .p1 .texto p {
+        font-size: 10px;
+    }
+    .content .sponsors .sponsor1 h3 {
+        font-size: 16px;
+    }
+    .content .header a {
+        font-size: 4px;
+    }
+    .content .articulo .item i {
+        font-size: 40px;
+    }
+    .content .articulo .special-item i {
+        font-size: 20px;
+    }
+    .content .articulo .item a {
+        height: 35px;
+        width: 120px;
+        font-size: 9px;
+    }
+    .content .articulo .special-item a {
+        height: 35px;
+        width: 120px;
+        font-size: 9px;
+        align-self: center;
+    }
+    .content .articulo .special-item h4 {
+        font-size: 10px;
+    }
+    .content .main .p2 .form h2 {
+        text-align: center;
+        font-size: 15px;
+    }
+    .content .main .p2 .form form label {
+        align-self: start;
+        font-size: 8px;
+    }
+    .content .main .p2 .form form textarea {
+        height: 4rem;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .content .main .p1 .texto p {
+        font-size: 7px;
+    }
+    .content .main .p2 .form h2 {
+        text-align: center;
+        font-size: 12px;
+    }
+    .content .main .p2 .form form label {
+        align-self: start;
+        font-size: 6px;
+    }
+    .content .main .p2 .form form textarea {
+        height: 3rem;
+    }
+    .content .main .p2 .form form button {
+        font-size: 7px;
+    }
+}
+
+/*Fin de Responsive de Teléfonos*/
