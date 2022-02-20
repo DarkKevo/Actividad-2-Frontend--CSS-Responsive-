@@ -57,6 +57,7 @@
 .content .header i {
 	font-size: 40px;
 	margin-left: 60px;
+    transition: 0.5;
 }
 
 /*Fin de Configuración del Header*/
@@ -69,6 +70,7 @@
     background-position: center;
     height: 40rem;
     grid-area: banner;
+    transition: 0.5s;
 }
 
 /*Fin de la configuración del Banner*/
@@ -180,7 +182,7 @@
 .content .main .p1 {
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     margin: auto 4rem;
 }
 .content .main .p1 .texto {
@@ -192,7 +194,11 @@
 }
 
 .content .main .p1 .img {
-    width: 35%;
+    width: 42%;
+}
+
+.content .main .p1 .img img {
+    width: 100%;
 }
 
 .content .main .p1 .texto {
@@ -214,33 +220,27 @@
 
 .content .main .p2 {
     display: flex;
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-evenly;
-    margin: 8rem auto;
+    align-items: center;
+    margin: 8rem 4rem;
+    justify-content: space-around;
 } 
 
 .content .main .p2 .img {
     width: 40%;
-    margin-left: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .content .main .p2 .img img {
-    width: 85%;
+    width: 100%;
 }
 
 .content .main .p2 .form {
-    width: 40%;
-    font-size: 18px;
+    width: 43%;
+    font-size: 16px;
     display: flex;
-    flex-direction: column;
-    margin-right: 8rem;
-    justify-content: center;
-    align-items: center;
-}
-
-.content .main .p2 .form input, textarea {
-    display: flex;
+    text-align: start;
     flex-direction: column;
 }
 
@@ -255,7 +255,7 @@
 
 .content .main .form textarea {
     width: 97.5%;
-    height: 8rem;
+    height: 6rem;
     background-color: rgb(59, 57, 57);
     border: none;
     margin-top: 10px;
@@ -264,6 +264,8 @@
 
 .content .main .p2 h2 {
     margin-bottom: 1rem;
+    font-size: 30px;
+    text-align: left;
 }
 
 .content .main .p2 .form .separador {
@@ -486,3 +488,126 @@
     margin-left: 8px;
     font-size: 40px;
 }
+
+/*Inicio de la Creación de Responsive*/
+
+/*Resolución de Tablet 
+Aproximadamente entre
+1090px - 870px - 768px */
+
+@media screen and (max-width: 1089px) {
+    .content .banner {
+        height: 30rem;
+    }
+}
+
+@media screen and (max-width: 870px) {
+    .content .banner {
+        height: 25rem;
+    }
+    .content .main .p1 .texto {
+        font-size: 15px;
+    }
+    .content .main .p1 .texto h2 {
+        font-size: 25px;
+    }
+    .content .main .p2 .form h2 {
+        font-size: 20px;
+    }
+    .content .header a {
+        font-size: 10px;
+    }
+    .content .articulo .item i {
+        font-size: 80px;
+    }
+    .content .articulo .special-item i {
+        font-size: 60px;
+        margin-bottom: 15px;
+    }
+    .content .main .contacto h3 {
+        font-size: 20px;
+    }
+    .content .main .contacto p {
+        font-size: 10px;
+        margin-bottom: 5px;
+    }
+    .content .main .p1 .texto .separador {
+        margin-bottom: 20px;
+    }
+    
+    .content .main .p1 h2 {
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .content .header a {
+        font-size: 8px;
+    }
+    .content .header i {
+        font-size: 20px;
+    }
+    .content .articulo .item i {
+        font-size: 50px;
+    }
+    .content .articulo .special-item i {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+    .content .articulo .item a {
+        height: 35px;
+        width: 190px;
+        font-size: 13px;
+    }
+    .content .articulo .special-item a {
+        height: 35px;
+        width: 190px;
+        font-size: 13px;
+    }
+    .content .main .p1 {
+        flex-direction: column;
+        width: 100%;
+    }
+    .content .main .p1 .texto {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .content .main .p1 .img {
+        margin-top: 15px;
+        width: 50%;
+    }
+    .content .main .p2 {
+        flex-direction: column;
+        margin-bottom: 4rem;
+    }
+    .content .main .p2 .img {
+        width: 80%;
+    }
+    .content .main .p2 .form {
+        width: 110%;
+        margin-top: 4rem;
+    }
+    .content .main .p2 .form h2 {
+        text-align: center;
+    }
+    .content .main .p2 .form form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content .main .p2 .form form label {
+        align-self: start;
+    }
+    .content .articulo .separador {
+        margin-bottom: 10px;
+    }
+}
+
+/*Fin de Responsive de Tablets*/
+
+/*Resolución de Teléfonos 
+Aproximadamente entre
+550px - 430px - 360px */
