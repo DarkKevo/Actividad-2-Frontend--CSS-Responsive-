@@ -6,15 +6,13 @@
 		Verdana, sans-serif;
 }
 
-/*Definicion del Contenedor Grid de la Pagina*/
+/*Definición del Contenedor Grid de la Pagina*/
 
 .content {
-	background-color: aqua;
 	display: grid;
 	width: 100%;
     min-width: 360px;
 	max-width: 100%;
-	margin: 0px auto;
 	grid-gap: 0px;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: repeat(6, auto);
@@ -85,7 +83,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
     padding: 60px;
 }
@@ -175,7 +172,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     background-color: black;
     color: white;
 }
@@ -293,7 +289,6 @@
 
 .content .main .p2 .redes {
     display: flex;
-    align-items: center;
     justify-content: center;
     margin-top: 1.5rem;
 }
@@ -369,7 +364,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: black;
     width: 100%;
     margin-bottom: 4rem;
 }
@@ -384,7 +378,6 @@
     height: 4px;
     background-color: rgb(255, 0, 0);
     border-radius: 2px;
-    margin-bottom: 1rem;
     margin-bottom: 1.5rem;
 }
 
@@ -392,11 +385,10 @@
     display: flex;
     width: 90%;
     flex-wrap: wrap;
-    justify-content: space-around
+    justify-content: space-around;
 }
 
 .content .sponsors .sponsor1 .img1 {
-    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -409,7 +401,6 @@
 
 .content .sponsors .sponsor1 .img2 {
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: column;
 }
@@ -422,9 +413,7 @@
     grid-area: footer;
     background-color: rgb(88, 88, 88);
     display: flex;
-    text-align: center;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
 }
 
@@ -657,6 +646,9 @@ Aproximadamente entre
 }
 
 @media screen and (max-width: 550px) {
+    .content .main .p2 {
+        margin-top: 5rem;
+    }
     .content .banner {
         height: 15rem;
     }
@@ -708,7 +700,10 @@ Aproximadamente entre
         font-size: 22px;
     }
     .content .header a {
-        font-size: 6px;
+        font-size: 8px;
+    }
+    .content .header .navegacion a {
+        padding: 0px 12px;
     }
     .content .main .p2 .form {
         width: 85%;
@@ -733,7 +728,10 @@ Aproximadamente entre
         font-size: 16px;
     }
     .content .header a {
-        font-size: 4px;
+        font-size: 6.5px;
+    }
+    .content .header .navegacion a {
+        padding: 0px 10px;
     }
     .content .articulo .item i {
         font-size: 40px;
@@ -766,9 +764,20 @@ Aproximadamente entre
     .content .main .p2 .form form textarea {
         height: 4rem;
     }
+    .content .main .p2 .form form button {
+        font-size: 10px;
+    }
+    .content .sponsors .sponsor1 #special-sponsor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 @media screen and (max-width: 360px) {
+    .content .main .p2 {
+        margin-top: 4rem; 
+    }
     .content .main .p1 .texto p {
         font-size: 7px;
     }
